@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.9)
 set(CMAKE_CXX_STANDARD 11)
 project(usp_encode LANGUAGES CXX)
-find_package(aws-lambda-runtime )
-find_package(aws-cpp-sdk-core )
-find_package(aws-cpp-sdk-iot-data )
-find_package(aws-cpp-sdk-states )
 
 
 add_executable(${PROJECT_NAME} "main.cpp")

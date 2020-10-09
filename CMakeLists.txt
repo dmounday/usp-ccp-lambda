@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.18)
 
-project(AWS_LAMBDA VERSION 1.1
+project(USP_ENCODE_DECODE VERSION 1.1
         DESCRIPTION "Top level for all USP encode/decode lambdas."
   LANGUAGES CXX)
 include(CMakePrintHelpers)
@@ -38,6 +38,11 @@ set(PROTOC_EXECUTABLE ${INSTALL_DIR}/bin/protoc)
 add_library(protobuf SHARED IMPORTED)
 set_target_properties(protobuf PROPERTIES IMPORTED_LOCATION ${PROTOBUF_LIB}/libprotobuf.a)
 cmake_print_variables(SOURCE_DIR INSTALL_DIR PROTOBUF_INCLUDE PROTOBUF_LIB)
+
+find_package(aws-lambda-runtime)
+find_package(aws-cpp-sdk-core)
+find_package(aws-cpp-sdk-iot-data)
+find_package(aws-cpp-sdk-states)
 
 add_subdirectory(USPmsg_rec_lib)
 add_subdirectory(USP_MsgLib)
