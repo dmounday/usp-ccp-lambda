@@ -1,0 +1,19 @@
+{
+	"to-id": "gs-agent-01",
+	"from-id": "usp-control-aws",
+	"usp-msg": {
+	 "header": {
+	  "msgId": "101",
+	  "msgType": "GET"
+	 },
+	 "body": {
+	  "request": {
+	   "get": {
+	    "paramPaths": [
+	     "Device.DeviceInfo.FriendlyName"
+	    ]
+	   }
+	  }
+	 }
+	}
+}
