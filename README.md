@@ -27,3 +27,8 @@ Ensure that the AWS Lambda C++ Runtime and its dependencies are built as instruc
     $ cmake -DCMAKE_PREFIX_PATH=<aws-libraries> -S . -B build
     $ cd build
     $ make
+
+### Prefix notes
+The cmake prefix may be something like:
+    -DCMAKE_PREFIX_PATH='~/aws/aws_deps;~/aws/aws-lambda-lib' -S . -B build
+    
