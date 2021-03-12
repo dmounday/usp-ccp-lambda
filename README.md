@@ -1,8 +1,8 @@
 # usp-ccp-lambda
-USP message encode/decode with AWS Lambda functions written in C++
+TR-369 USP message encode/decode with AWS Lambda functions written in C++. 
 # AWS Lambda conversion of USP messages
 
-This is a project to encode and decode TR-369 USP messages. The messages are Google protobuf messages that are encoded/decoded from/to JSON for use by AWS functions.
+This is a project to encode and decode TR-369 USP messages(BroadBand Forum). The messages are Google protobuf messages that are encoded/decoded from/to JSON for use by AWS functions.
 
 The C++ encode/decode library is created by using the Google protoc compiler to generate the C++ source code based on the definition provided by the USP protocol description files. 
 
